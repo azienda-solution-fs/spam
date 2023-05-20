@@ -505,7 +505,7 @@ def post_commet(driverinstance, link, title):
             pass
     if check_exists_by_xpath(driverinstance, '//form[contains(@id, "comment")]//input[contains(@id, "author")]') == 0:
         try:
-            tryAndRetryFillByXpath(driverinstance, '//form[contains(@id, "comment")]//input[contains(@id, "author")]', str('Cliquez ici ! Débloquez votre potentiel'))
+            tryAndRetryFillByXpath(driverinstance, '//form[contains(@id, "comment")]//input[contains(@id, "author")]', str('Débloquez votre potentiel'))
         except NoSuchElementException:
             pass
     if check_exists_by_xpath(driverinstance, '//form[contains(@id, "comment")]//input[contains(@id, "url")]') == 0:
