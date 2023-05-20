@@ -495,7 +495,7 @@ def post_commet(driverinstance, link, title):
     if check_exists_by_xpath(driverinstance, '//form[contains(@id, "comment")]//textarea[contains(@id, "comment")]') == 0:
         try:
             tryAndRetryClickXpath(driverinstance, '//form[contains(@id, "comment")]//textarea[contains(@id, "comment")]')
-            tryAndRetryFillByXpath(driverinstance, '//form[contains(@id, "comment")]//textarea[contains(@id, "comment")]', str('Préparez-vous à augmenter votre chiffre d\'affaires jusqu\'à 50% grâce à une présence en ligne optimale ! Adoptez dès maintenant le meilleur hébergeur avec un nom de domaine gratuit et propulsez votre entreprise vers des sommets de succès inégalés. Ne manquez pas cette opportunité inestimable : agissez dès maintenant pour atteindre le succès absolu en ligne !'))
+            tryAndRetryFillByXpath(driverinstance, '//form[contains(@id, "comment")]//textarea[contains(@id, "comment")]', str('Je tenais à prendre un moment pour vous féliciter chaleureusement pour votre article inspirant et captivant En signe de gratitude pour votre excellent travail, Préparez-vous à augmenter votre chiffre d\'affaires jusqu\'à 50% grâce à une présence en ligne optimale ! Adoptez dès maintenant le meilleur hébergeur avec un nom de domaine gratuit et propulsez votre entreprise vers des sommets de succès inégalés. Ne manquez pas cette opportunité inestimable : agissez dès maintenant pour atteindre le succès absolu en ligne !'))
         except NoSuchElementException:
             pass
     if check_exists_by_xpath(driverinstance, '//form[contains(@id, "comment")]//input[contains(@id, "email")]') == 0:
