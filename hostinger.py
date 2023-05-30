@@ -610,6 +610,7 @@ def publish():
                                 time.sleep(5)
                                 
                                 
+                                my_list__ = list()
                                 post_link = driverinstance.find_elements(By.XPATH,'//a[contains(@rel, "bookmark")]')
                                 for i__ in post_link:
                                     step2 = (i__.get_attribute('href'))
@@ -649,7 +650,6 @@ def publish():
 list_search = list()
 list_search = ["facebook.com", "reddit","wikipedia"]
 
-my_list__ = list()
 final_result = list()
 final_result = ["fr", "com","cn","es","ca","ru","de",".com.hk", ".co.uk"]
 
