@@ -541,7 +541,7 @@ def publish():
         driverinstance.get("https://google.com")
         WORDS = str(WORDSSSS[int(random.randint(8, count_WORDS))])
         print(WORDS)
-        #WORDS = "dermatology ca"
+        #WORDS = "zeru ca .pdf"
         title = linecache.getline(r"/opt/lampp/htdocs/avis-review.com/scrap/all_link_sitemap.txt", item)
         link = linecache.getline(r"/opt/lampp/htdocs/avis-review.com/scrap/all_link_sitemap.txt", item)
         append_new_line(r'all_link_googlebot_done.txt', str(title))
@@ -710,5 +710,13 @@ def get_website_status(url):
 
 
 
-publish()
+while True:
+    try:
+        publish()
+        break
+    except Exception as e:
+        print("Une erreur s'est produite :", str(e))
+        print("Redémarrage du script dans 5 secondes...")
+        time.sleep(5)  # Attendre 5 secondes avant de redémarrer
+
 #get_website_status("")
